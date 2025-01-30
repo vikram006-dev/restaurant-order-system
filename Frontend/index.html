@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navbar">
+                <li><button data-category="starters">Starters</button></li>
+                <li><button data-category="main-course">Main Course</button></li>
+                <li><button data-category="desserts">Desserts</button></li>
+                <li><button data-category="beverages">Beverages</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu-section">
+            <div id="menu-items">
+                <!-- Food items will be dynamically displayed here -->
+            </div>
+        </section>
+        <button id="submit-button">Submit Order</button>
+    </main>
+
+    <div id="order-summary">
+        <h3>Order Summary</h3>
+        <p><strong>Table No: <span id="table-number">N/A</span></strong></p>
+        <ul id="summary-list">
+            <!-- Chosen items will appear here -->
+        </ul>
+        <p><strong>Total: <span id="total-amount">0</span> Rs</strong></p>
+        <button id="final-submit">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
